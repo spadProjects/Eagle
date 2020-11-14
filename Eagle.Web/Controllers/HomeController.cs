@@ -16,6 +16,7 @@ namespace Eagle.Web.Controllers
 
         public ActionResult About()
         {
+            var test = "this is a test";
             ViewBag.Message = "Your application description page.";
 
             return View();
