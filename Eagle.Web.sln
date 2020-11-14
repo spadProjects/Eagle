@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.Web", "Eagle.Web\Eagle.Web.csproj", "{BA17555A-AA0C-4F36-9B4C-EF6506FCB1B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.Core", "Eagle.Core\Eagle.Core.csproj", "{4FB3084C-598F-47B2-A285-75744D23E748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.Infrastructure", "Eagle.Infrastructure\Eagle.Infrastructure.csproj", "{4BD3E4ED-255B-4521-B0AA-73D9A38D345F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA17555A-AA0C-4F36-9B4C-EF6506FCB1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA17555A-AA0C-4F36-9B4C-EF6506FCB1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA17555A-AA0C-4F36-9B4C-EF6506FCB1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA17555A-AA0C-4F36-9B4C-EF6506FCB1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB3084C-598F-47B2-A285-75744D23E748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB3084C-598F-47B2-A285-75744D23E748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB3084C-598F-47B2-A285-75744D23E748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB3084C-598F-47B2-A285-75744D23E748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD3E4ED-255B-4521-B0AA-73D9A38D345F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD3E4ED-255B-4521-B0AA-73D9A38D345F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD3E4ED-255B-4521-B0AA-73D9A38D345F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD3E4ED-255B-4521-B0AA-73D9A38D345F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BD3E4ED-255B-4521-B0AA-73D9A38D345F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eagle.Infrastructure</RootNamespace>
+    <AssemblyName>Eagle.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseRepository.cs" />
+    <Compile Include="Filters\PaginationFilter.cs" />
+    <Compile Include="Helpers\AsyncHelper.cs" />
+    <Compile Include="Helpers\CheckImageClass.cs" />
+    <Compile Include="Helpers\CheckPermission.cs" />
+    <Compile Include="Helpers\Email.cs" />
+    <Compile Include="Helpers\ImageResizer.cs" />
+    <Compile Include="Helpers\PasswordHelper.cs" />
+    <Compile Include="Helpers\PersianCulture.cs" />
+    <Compile Include="Migrations\202010281321400_Initial.cs" />
+    <Compile Include="Migrations\202010281321400_Initial.Designer.cs">
+      <DependentUpon>202010281321400_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010291841224_Added-Validation.cs" />
+    <Compile Include="Migrations\202010291841224_Added-Validation.Designer.cs">
+      <DependentUpon>202010291841224_Added-Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010300647496_Added-Role-Permissions.cs" />
+    <Compile Include="Migrations\202010300647496_Added-Role-Permissions.Designer.cs">
+      <DependentUpon>202010300647496_Added-Role-Permissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010300821584_Added-User-Roles.cs" />
+    <Compile Include="Migrations\202010300821584_Added-User-Roles.Designer.cs">
+      <DependentUpon>202010300821584_Added-User-Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010300931241_Added-Role.cs" />
+    <Compile Include="Migrations\202010300931241_Added-Role.Designer.cs">
+      <DependentUpon>202010300931241_Added-Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010310709515_Added-Article-Validation.cs" />
+    <Compile Include="Migrations\202010310709515_Added-Article-Validation.Designer.cs">
+      <DependentUpon>202010310709515_Added-Article-Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010529410_edited-aarticle.cs" />
+    <Compile Include="Migrations\202011010529410_edited-aarticle.Designer.cs">
+      <DependentUpon>202011010529410_edited-aarticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010636463_edited-headline.cs" />
+    <Compile Include="Migrations\202011010636463_edited-headline.Designer.cs">
+      <DependentUpon>202011010636463_edited-headline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010734429_added-faq.cs" />
+    <Compile Include="Migrations\202011010734429_added-faq.Designer.cs">
+      <DependentUpon>202011010734429_added-faq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010741010_edited-faq.cs" />
+    <Compile Include="Migrations\202011010741010_edited-faq.Designer.cs">
+      <DependentUpon>202011010741010_edited-faq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010758425_added-testimonial.cs" />
+    <Compile Include="Migrations\202011010758425_added-testimonial.Designer.cs">
+      <DependentUpon>202011010758425_added-testimonial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010804476_edited-testimonial.cs" />
+    <Compile Include="Migrations\202011010804476_edited-testimonial.Designer.cs">
+      <DependentUpon>202011010804476_edited-testimonial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010815404_edited-testimonial2.cs" />
+    <Compile Include="Migrations\202011010815404_edited-testimonial2.Designer.cs">
+      <DependentUpon>202011010815404_edited-testimonial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010852454_edited-contact-form.cs" />
+    <Compile Include="Migrations\202011010852454_edited-contact-form.Designer.cs">
+      <DependentUpon>202011010852454_edited-contact-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011010922457_edited-gallery.cs" />
+    <Compile Include="Migrations\202011010922457_edited-gallery.Designer.cs">
+      <DependentUpon>202011010922457_edited-gallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011021035529_modified-Users.cs" />
+    <Compile Include="Migrations\202011021035529_modified-Users.Designer.cs">
+      <DependentUpon>202011021035529_modified-Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011021213462_modified-Users2.cs" />
+    <Compile Include="Migrations\202011021213462_modified-Users2.Designer.cs">
+      <DependentUpon>202011021213462_modified-Users2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011021233582_modified-Users3.cs" />
+    <Compile Include="Migrations\202011021233582_modified-Users3.Designer.cs">
+      <DependentUpon>202011021233582_modified-Users3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011041153437_Edited-Comments.cs" />
+    <Compile Include="Migrations\202011041153437_Edited-Comments.Designer.cs">
+      <DependentUpon>202011041153437_Edited-Comments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011041311571_Edited-Partners.cs" />
+    <Compile Include="Migrations\202011041311571_Edited-Partners.Designer.cs">
+      <DependentUpon>202011041311571_Edited-Partners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070645255_Edited_services.cs" />
+    <Compile Include="Migrations\202011070645255_Edited_services.Designer.cs">
+      <DependentUpon>202011070645255_Edited_services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070733501_Edited_serviceIncludes.cs" />
+    <Compile Include="Migrations\202011070733501_Edited_serviceIncludes.Designer.cs">
+      <DependentUpon>202011070733501_Edited_serviceIncludes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011070852360_Edited_static_content.cs" />
+    <Compile Include="Migrations\202011070852360_Edited_static_content.Designer.cs">
+      <DependentUpon>202011070852360_Edited_static_content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011080651395_Added-log-fields-to-tables.cs" />
+    <Compile Include="Migrations\202011080651395_Added-log-fields-to-tables.Designer.cs">
+      <DependentUpon>202011080651395_Added-log-fields-to-tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011080752255_Added-log-table.cs" />
+    <Compile Include="Migrations\202011080752255_Added-log-table.Designer.cs">
+      <DependentUpon>202011080752255_Added-log-table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011080800575_Edited-log-table.cs" />
+    <Compile Include="Migrations\202011080800575_Edited-log-table.Designer.cs">
+      <DependentUpon>202011080800575_Edited-log-table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011080854565_Edited-static-content.cs" />
+    <Compile Include="Migrations\202011080854565_Edited-static-content.Designer.cs">
+      <DependentUpon>202011080854565_Edited-static-content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MyDbContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ArticleCategoriesRepository.cs" />
+    <Compile Include="Repositories\ArticleCommentsRepository.cs" />
+    <Compile Include="Repositories\ArticleHeadLinesRepository.cs" />
+    <Compile Include="Repositories\ArticlesRepositoriy.cs" />
+    <Compile Include="Repositories\AuthRepsitory.cs" />
+    <Compile Include="Repositories\ContactFormsRepository.cs" />
+    <Compile Include="Repositories\FaqRepository.cs" />
+    <Compile Include="Repositories\GalleriesRepository.cs" />
+    <Compile Include="Repositories\LogsRepository.cs" />
+    <Compile Include="Repositories\OurTeamRepository.cs" />
+    <Compile Include="Repositories\PartnersRepository.cs" />
+    <Compile Include="Repositories\ServiceIncludesRepository.cs" />
+    <Compile Include="Repositories\ServicesRepository.cs" />
+    <Compile Include="Repositories\StaticContentDetailsRepository.cs" />
+    <Compile Include="Repositories\StaticContentsRepository.cs" />
+    <Compile Include="Repositories\StaticContentTypes.cs" />
+    <Compile Include="Repositories\TestimonialsRepository.cs" />
+    <Compile Include="Repositories\UsersRepository.cs" />
+    <Compile Include="Seed.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eagle.Core\Eagle.Core.csproj">
+      <Project>{4fb3084c-598f-47b2-a285-75744d23e748}</Project>
+      <Name>Eagle.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202010281321400_Initial.resx">
+      <DependentUpon>202010281321400_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010291841224_Added-Validation.resx">
+      <DependentUpon>202010291841224_Added-Validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010300647496_Added-Role-Permissions.resx">
+      <DependentUpon>202010300647496_Added-Role-Permissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010300821584_Added-User-Roles.resx">
+      <DependentUpon>202010300821584_Added-User-Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010300931241_Added-Role.resx">
+      <DependentUpon>202010300931241_Added-Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010310709515_Added-Article-Validation.resx">
+      <DependentUpon>202010310709515_Added-Article-Validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010529410_edited-aarticle.resx">
+      <DependentUpon>202011010529410_edited-aarticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010636463_edited-headline.resx">
+      <DependentUpon>202011010636463_edited-headline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010734429_added-faq.resx">
+      <DependentUpon>202011010734429_added-faq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010741010_edited-faq.resx">
+      <DependentUpon>202011010741010_edited-faq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010758425_added-testimonial.resx">
+      <DependentUpon>202011010758425_added-testimonial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010804476_edited-testimonial.resx">
+      <DependentUpon>202011010804476_edited-testimonial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010815404_edited-testimonial2.resx">
+      <DependentUpon>202011010815404_edited-testimonial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010852454_edited-contact-form.resx">
+      <DependentUpon>202011010852454_edited-contact-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011010922457_edited-gallery.resx">
+      <DependentUpon>202011010922457_edited-gallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011021035529_modified-Users.resx">
+      <DependentUpon>202011021035529_modified-Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011021213462_modified-Users2.resx">
+      <DependentUpon>202011021213462_modified-Users2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011021233582_modified-Users3.resx">
+      <DependentUpon>202011021233582_modified-Users3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011041153437_Edited-Comments.resx">
+      <DependentUpon>202011041153437_Edited-Comments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011041311571_Edited-Partners.resx">
+      <DependentUpon>202011041311571_Edited-Partners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070645255_Edited_services.resx">
+      <DependentUpon>202011070645255_Edited_services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070733501_Edited_serviceIncludes.resx">
+      <DependentUpon>202011070733501_Edited_serviceIncludes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011070852360_Edited_static_content.resx">
+      <DependentUpon>202011070852360_Edited_static_content.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011080651395_Added-log-fields-to-tables.resx">
+      <DependentUpon>202011080651395_Added-log-fields-to-tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011080752255_Added-log-table.resx">
+      <DependentUpon>202011080752255_Added-log-table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011080800575_Edited-log-table.resx">
+      <DependentUpon>202011080800575_Edited-log-table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011080854565_Edited-static-content.resx">
+      <DependentUpon>202011080854565_Edited-static-content.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
